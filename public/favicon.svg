@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="50%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Rounded Base Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Inner Ring Highlight -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="12"/>
+  
+  <!-- Download Arrow & Clip Base -->
+  <g filter="url(#shadow)">
+    <!-- Downward Arrow Shaft & Head -->
+    <path d="M256 120 V290" stroke="#ffffff" stroke-width="44" stroke-linecap="round"/>
+    <path d="M176 226 L256 306 L336 226" fill="none" stroke="#ffffff" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Bottom Clip Tray -->
+    <path d="M148 340 H364" stroke="#ffffff" stroke-width="44" stroke-linecap="round"/>
+    <circle cx="148" cy="340" r="14" fill="#ffffff"/>
+    <circle cx="364" cy="340" r="14" fill="#ffffff"/>
+  </g>
+</svg>
