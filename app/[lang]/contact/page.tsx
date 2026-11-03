@@ -108,15 +108,28 @@ export default function ContactPage() {
                     <p className="text-slate-300 text-sm max-w-md mx-auto">
                       {contact.form.successMessage}
                     </p>
-                    <button
-                      onClick={() => {
-                        setSubmitted(false);
-                        setFormData({ name: '', email: '', subject: '', message: '' });
-                      }}
-                      className="mt-6 px-6 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium transition-colors"
-                    >
-                      {lang === 'ar' ? 'إرسال رسالة أخرى' : 'Send Another Message'}
-                    </button>
+                    <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+                      <a
+                        href={`mailto:${contact.email}?subject=${encodeURIComponent(
+                          formData.subject || 'GoSaveClip Inquiry'
+                        )}&body=${encodeURIComponent(
+                          `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+                        )}`}
+                        className="px-5 py-2.5 rounded-full bg-rose-600 hover:bg-rose-500 text-white text-sm font-medium transition-colors inline-flex items-center gap-2"
+                      >
+                        <Mail className="w-4 h-4" />
+                        <span>{lang === 'ar' ? 'فتح في تطبيق البريد' : 'Open in Email App'}</span>
+                      </a>
+                      <button
+                        onClick={() => {
+                          setSubmitted(false);
+                          setFormData({ name: '', email: '', subject: '', message: '' });
+                        }}
+                        className="px-5 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium transition-colors"
+                      >
+                        {lang === 'ar' ? 'إرسال رسالة أخرى' : 'Send Another Message'}
+                      </button>
+                    </div>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
