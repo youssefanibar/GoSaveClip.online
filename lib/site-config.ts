@@ -2,7 +2,8 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://gosaveclip
 export const SITE_NAME = 'GoSaveClip';
 export const SITE_DOMAIN = 'gosaveclip.online';
 export const BRAND_TAGLINE = 'Free Online Video & Audio Downloader';
-export const CONTACT_EMAIL = 'mohamedanibar101@gmail.com';
+export const WEB3FORMS_ACCESS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '5175c12f-4b2c-47f4-afce-2d75efed0e5a';
 
 export const SUPPORTED_PLATFORMS = [
   'TikTok',

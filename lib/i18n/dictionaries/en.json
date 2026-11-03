@@ -663,17 +663,34 @@
       "metaDesc": "Have questions, feedback, or technical inquiries? Contact the GoSaveClip engineering and support team.",
       "title": "Contact Us",
       "subtitle": "We'd love to hear from you. Get in touch for support, partnerships, or feedback.",
-      "emailLabel": "Support Email",
-      "email": "mohamedanibar101@gmail.com",
+      "channelLabel": "Online Support",
+      "channelValue": "Direct Inquiries",
+      "channelDesc": "Submit your inquiry using our secure form and our team will get back to you.",
       "hoursLabel": "Response Time",
       "hours": "Within 24–48 business hours",
+      "privacyCardTitle": "Data Privacy",
+      "privacyCardText": "We never sell or share your contact details or inquiries with any third parties.",
       "form": {
         "nameLabel": "Your Name",
+        "namePlaceholder": "Your name",
         "emailLabel": "Email Address",
+        "emailPlaceholder": "name@example.com",
         "subjectLabel": "Subject",
+        "subjectPlaceholder": "Bug report, feature request, or feedback",
         "messageLabel": "Message",
+        "messagePlaceholder": "Describe your question or issue in detail...",
         "submitBtn": "Send Message",
-        "successMessage": "Thank you for reaching out! We have received your message and will respond shortly."
+        "sendingBtn": "Sending...",
+        "successMessage": "Thanks, your message has been sent. We will reply by email.",
+        "errorMessage": "Something went wrong. Please try again in a few minutes.",
+        "privacyNote": "We only use your email to reply to your message.",
+        "privacyLink": "Privacy Policy",
+        "sendAnotherBtn": "Send Another Message",
+        "errors": {
+          "name": "Name must be between 2 and 80 characters.",
+          "email": "Please enter a valid email address.",
+          "message": "Message must be between 10 and 3000 characters."
+        }
       }
     },
     "privacy": {
@@ -695,11 +712,15 @@
           "content": "We do not require user accounts, credit card information, names, or contact details to use our download services. We do not track or profile user identity across third-party websites."
         },
         {
-          "title": "4. Log Files and Rate Limiting",
+          "title": "4. Contact Form Inquiries",
+          "content": "When you contact us using our contact form, your submission (name, email address, subject, and message) is securely processed by Web3Forms, a third-party form service, and delivered to our email inbox. We only use your email to reply to your message, and we never share or sell this information."
+        },
+        {
+          "title": "5. Log Files and Rate Limiting",
           "content": "Like many websites, our servers temporarily maintain transient in-memory IP addresses solely for rate limiting, DDoS defense, and ensuring service availability. These records are purged automatically on a rolling basis."
         },
         {
-          "title": "5. Security",
+          "title": "6. Security",
           "content": "All communication with GoSaveClip is encrypted using industry-standard Transport Layer Security (TLS/HTTPS) to protect data integrity and user confidentiality."
         }
       ]
